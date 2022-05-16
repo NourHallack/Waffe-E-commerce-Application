@@ -1,2 +1,2 @@
-# Waffe-E-commerce-Application
+# Waffer-E-commerce-Application
 Birzeit University - Graduation Project 
