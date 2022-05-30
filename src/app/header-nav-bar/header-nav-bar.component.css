@@ -16,3 +16,14 @@
 .mat-icon{
     color: var(--background-color);
 }
+
+.mat-form-field {
+    font-size: medium;
+    padding-left: 0.5em;
+    width: 120px;
+}
+
+.mat-raised-button{
+    color : var(--primary-color);
+}
+

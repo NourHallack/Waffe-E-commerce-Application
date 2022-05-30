@@ -1,0 +1,8 @@
+{
+    "Menu" : {"CustomizedPackage" : "Customized Package" , 
+              "Maintenance" : "Maintenance" , 
+              "BestPackagePrice" : "Best Package Price",
+              "Login" : "Login",
+              "RegisterNewSeller" : "Register New Seller "           
+    }
+}

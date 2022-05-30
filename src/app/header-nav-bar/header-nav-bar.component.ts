@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,9 +9,24 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class HeaderNavBarComponent implements OnInit {
 
-  constructor() { }
+  languages: string[] = [
+    'Arabic',
+    'English'
+    ];
 
-  ngOnInit(): void {
+  selectedLanguage : String ;
+
+  constructor(private http: HttpClient) { 
+    this.selectedLanguage = localStorage.getItem('lang') || "English";
+  }
+
+  ngOnInit(): void { 
+  }
+
+  //Handle Changing the Languages 
+  changeLanguage (lang : string){
+    localStorage.setItem('lang' , lang );
+    window.location.reload();
   }
 
 }

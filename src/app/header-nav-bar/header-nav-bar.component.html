@@ -4,13 +4,13 @@
 
       <div class="example-spacer"></div>
       
-      <a mat-button>Customized Package</a>
+      <a mat-button >{{'Menu.CustomizedPackage' | translate}}</a>
      
       <a mat-button routerLink="maintence">
-        <mat-icon>engineering</mat-icon> Maintenance
+        <mat-icon>engineering</mat-icon> {{'Menu.Maintenance' | translate}}
       </a>
       
-      <a mat-button>Best Price Package</a>
+      <a mat-button>{{'Menu.BestPackagePrice' | translate}}</a>
       
       <span class="example-spacer"></span>
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
@@ -22,9 +22,19 @@
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>compare</mat-icon>
       </button>
-      <div class="example-spacer"></div>
-      <a mat-raised-button style="color: #2b6777;">Login</a>
-      <a mat-button>Register New Seller</a>
 
+      <div class="example-spacer"></div>
+
+      <a mat-raised-button>{{'Menu.Login' | translate}}</a>
+      <a mat-button>{{'Menu.RegisterNewSeller' | translate}}</a>
+
+      <div class="example-spacer"></div>
+      
+      <mat-icon>language</mat-icon>
+      <mat-form-field >      
+        <mat-select [(value)]= "selectedLanguage" (selectionChange)="changeLanguage($event.value)">
+          <mat-option *ngFor="let language of languages" [value]="language">{{language}} </mat-option>
+        </mat-select>
+      </mat-form-field>
     </mat-toolbar>
 </p>
