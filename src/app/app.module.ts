@@ -15,6 +15,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { ItemCardComponent } from './item-card/item-card.component';
 
 
 // AoT requires an exported function for factories
@@ -26,7 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HeaderNavBarComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    ItemCardComponent
   ],
   imports: [
     BrowserModule,

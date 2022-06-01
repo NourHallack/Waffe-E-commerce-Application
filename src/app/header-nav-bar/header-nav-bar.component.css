@@ -1,7 +1,7 @@
-
 .mat-toolbar{
     background-color: var(--primary-color);
     color: var(--background-color);
+    
 }
 
 .example-spacer {
@@ -25,5 +25,10 @@
 
 .mat-raised-button{
     color : var(--primary-color);
+    font-family: 'Tajawal', sans-serif;
+}
+
+.mat-button{
+    font-family: 'Tajawal', sans-serif;
 }
 

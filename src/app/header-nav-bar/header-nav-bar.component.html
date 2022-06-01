@@ -1,16 +1,20 @@
 <p>
     <mat-toolbar class="mat-elevation-z8">
-      <span>Waffer E-Commerce Application</span>
+      <span  style= "font-family: 'Tajawal', sans-serif; ">Waffer E-Commerce Application</span>
 
       <div class="example-spacer"></div>
       
-      <a mat-button >{{'Menu.CustomizedPackage' | translate}}</a>
+      <a mat-button >
+        <mat-icon>create</mat-icon>{{'Menu.CustomizedPackage' | translate}}
+      </a>
      
       <a mat-button routerLink="maintence">
         <mat-icon>engineering</mat-icon> {{'Menu.Maintenance' | translate}}
       </a>
       
-      <a mat-button>{{'Menu.BestPackagePrice' | translate}}</a>
+      <a mat-button>
+        <mat-icon>attach_money</mat-icon>{{'Menu.BestPackagePrice' | translate}}
+      </a>
       
       <span class="example-spacer"></span>
       <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
